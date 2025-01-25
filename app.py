@@ -21,5 +21,6 @@ def api():
     marks = get_marks(names)
     return jsonify({"marks": marks})
 
-if __name__ == '__main__':
-    app.run(debug=True)
+# Entry point for Vercel to run the Flask app
+if __name__ == "__main__":
+    app.run()
